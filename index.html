@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Generador de Citas Aleatorias</title>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body class="bg-primary" style="--bs-bg-opacity: .8;">
+    <div class="container">
+      <div class="abs-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text" id="quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ultrices enim. Etiam iaculis purus...</p>
+            <button class="btn btn-primary btn-quote">
+              <i class="fa fa-twitter"></i> 
+            </button>
+            <button class="btn btn-primary btn-quote">
+              <i class="fa fa-facebook"></i> 
+            </button>
+            <button class="btn btn-primary btn-quote" id="myButton" type="button">Nueva cita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+
+      const quotes = {
+        quote1: "a",
+        quote2: "b",
+        quote3: "c"
+      };
+
+      let currentQuote = "";
+
+      $("#myButton").on("click", function() {
+        $("#quote-text").html("<em>" + quotes["quote1"] + "</em>")
+      });
+      </script>
+  </body>
+</html>
