@@ -12042,6 +12042,13 @@ textarea.form-control-lg {
   min-height: 100vh;
 }
 
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
 .btn-quote {
   opacity: 80%;
 }

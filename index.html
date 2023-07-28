@@ -12,6 +12,10 @@
         <div class="card" style="width: 18rem;">
           <div class="card-body">
             <p class="card-text" id="quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ultrices enim. Etiam iaculis purus...</p>
+            <p id="quote-autor"> - Anonymous</p>
+            <div class="col-xs-4">
+              <img id="img-autor" class="img-fluid img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+            </div>
             <button class="btn btn-primary btn-quote">
               <i class="fa fa-twitter"></i> 
             </button>
@@ -27,19 +31,6 @@
     <p>Prueba de push en VS</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script>
-
-      const quotes = {
-        quote1: "a",
-        quote2: "b",
-        quote3: "c"
-      };
-
-      let currentQuote = "";
-
-      $("#myButton").on("click", function() {
-        $("#quote-text").html("<em>" + quotes["quote1"] + "</em>")
-      });
-      </script>
+    <script src="index.js"></script>
   </body>
 </html>
