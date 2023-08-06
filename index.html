@@ -1,34 +1,36 @@
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Generador de Citas Aleatorias</title>
-      <link href="styles.css" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Citas Aleatorias</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-primary" style="--bs-bg-opacity: .8;">
+  <body class="" style="--bs-bg-opacity: .7;">
     <div class="container">
       <div class="abs-center">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width:55%;">
           <div class="card-body">
-            <p class="card-text" id="quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ultrices enim. Etiam iaculis purus...</p>
-            <p id="quote-autor"> - Anonymous</p>
-            <div class="col-xs-4">
-              <img id="img-autor" class="img-fluid img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+            <div class="row">
+              <p class="quote card-text text-center" id="quote-text" style="opacity: .7;"></p>
+              <p class="quote text-end" id="quote-autor" style="opacity: .7;"></p>
             </div>
-            <button class="btn btn-primary btn-quote">
-              <i class="fa fa-twitter"></i> 
-            </button>
-            <button class="btn btn-primary btn-quote">
-              <i class="fa fa-facebook"></i> 
-            </button>
-            <button class="btn btn-primary btn-quote" id="myButton" type="button">Generar cita</button>
+            <div class="row"> 
+              <div class="col-xs-4">
+                <img id="img-autor" class="img-fluid thick-border mx-auto d-block" src="" style="margin-top: 5%;">
+              </div>
+            </div>
+            <div>
+              <button id="btn-twitter" class="btn btn-quote" style="opacity: .7; width: 10%; height: 20%; margin-left: 5%;">
+                <i class="fa fa-twitter"></i> 
+              </button>
+              <button class="btn btn-quote float-sm-end" id="myButton" type="button" style="opacity: .7; margin-right: 5%;">Generar cita</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <p>Prueba de push en VS</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="index.js"></script>
